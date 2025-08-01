@@ -2,7 +2,7 @@ document.getElementById("submit-answer").addEventListener('click', checkAnswer);
 function checkAnswer(){
     const correctAnswer="4";
     const userAnswer = document.querySelector('input[name="quiz"]:checked')?.value;
-    if(correctAnswer===userAnswer){
+    if(userAnswer===correctAnswer){
         feedbackElement.textContent="Correct! Well Done.";
     }
     else{
